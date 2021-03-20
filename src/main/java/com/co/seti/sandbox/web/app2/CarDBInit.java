@@ -55,11 +55,11 @@ public class CarDBInit {
                 Statement insertStatement = connection.createStatement();
                 insertStatement.addBatch("INSERT INTO Car VALUES(1,'TC','Andres',10000000,'BTG')");
                 insertStatement.addBatch("INSERT INTO Car VALUES(2,'Debito','Juan',20000000,'BTG')");
-                insertStatement.addBatch("INSERT INTO Car VALUES(3,'Cta Corriente','Camilo',3000000,'BTG')");
+                insertStatement.addBatch("INSERT INTO Car VALUES(3,'Cuenta Corriente','Camilo',3000000,'BTG')");
                 insertStatement.addBatch("INSERT INTO Car VALUES(4,'Prestamo LI','Laura',4000000,'BTG')");
                 insertStatement.addBatch("INSERT INTO Car VALUES(5,'Prestamo Hipotecario','Sandra',50000000,'BTG')");
-                insertStatement.addBatch("INSERT INTO Car VALUES(6,'Fiduciaria','Alejandra',60000000,'BTG')");
-                insertStatement.addBatch("INSERT INTO Car VALUES(7,'Qualis','Jhony',7000000,'BTG')");
+                insertStatement.addBatch("INSERT INTO Car VALUES(6,'Fiducuenta','Alejandra',60000000,'BTG')");
+                insertStatement.addBatch("INSERT INTO Car VALUES(7,'Ahorro Voluntario','Jhony',7000000,'BTG')");
                 int [] updateCounts = insertStatement.executeBatch();
                 connection.commit();
                 insertStatement.close();
