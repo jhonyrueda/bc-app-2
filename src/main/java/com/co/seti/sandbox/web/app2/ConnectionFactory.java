@@ -26,7 +26,7 @@ public class ConnectionFactory {
         Map<String, String> environment = System.getenv();
         String db_host = environment.getOrDefault("DATABASE_HOST", "localhost");
         String db_port = environment.getOrDefault("DATABASE_PORT", "3306");
-        String db_name = environment.getOrDefault("DATABASE_NAME", "cardb");
+        String db_name = environment.getOrDefault("DATABASE_NAME", "btgdb");
         String db_username = environment.getOrDefault("DATABASE_USERNAME", "root");
         String db_password = environment.getOrDefault("DATABASE_PASSWORD", "");
 
